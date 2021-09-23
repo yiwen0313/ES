@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展运算符</title>
+</head>
+<body>
+  <script>
+    /*
+    * ...  扩展运算符能将 数组 转化为逗号分隔符的 参数序列
+    *
+    * */
+
+    // 声明一个数组 ...
+    const f4= ['孙悟空', '猪八戒', '沙和尚']; // => '孙悟空', '猪八戒', '沙和尚'
+
+    //声明一个函数
+    function chunwan() {
+        console.log(arguments);
+    }
+
+    chunwan(...f4); //chunwan('孙悟空', '猪八戒', '沙和尚')
+  </script>
+</body>
+</html>
