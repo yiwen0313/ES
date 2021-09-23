@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symbol</title>
+</head>
+<body>
+    <script>
+        /*
+        * JavaScript数据类型
+        *   - UPONM  you are  so niubility
+        *      U undefined
+        *      S string  symbol
+        *      O object
+        *      N null  number
+        *      B boolean
+        * */
+
+
+        // 创建Symbol
+        let s = Symbol();
+        // console.log(s, typeof s);
+
+        let s2 = Symbol('yw');
+        console.log(s2, typeof s2);
+        let s3 = Symbol('yw');
+        console.log(s2 === s3); //false
+
+        let s4 = Symbol.for('yw');
+        let s5 = Symbol.for('yw');
+        console.log(s4 === s5); //true
+
+        console.log(s4, typeof s4);
+
+        // 不能与其他数据进行运算
+
+    </script>
+</body>
+</html>
