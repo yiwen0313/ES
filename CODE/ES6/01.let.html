@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>let</title>
+</head>
+<body>
+  <script>
+      //声明格式
+      let a;
+      let b, c, d;
+      let e = 100;
+      let f = 521, g = 'iloveyou', h = [];
+
+      // 1.变量不能重复声明，防止变量被污染
+      /*let p = 1;
+      let p =let*/
+
+      // 2.块级作用域   ES5中的作用域(全局、函数、eval(ES5的严格模式))
+      // if else while for 这些循环语句里也是块级作用域
+      /*{
+          let girl = '小红';
+      }
+      console.log(girl); // 读取不到 */
+
+      // 3.不存在变量提升
+      /*console.log(song); // 报错。不允许在变量声明之前使用变量
+      let song = '恋爱达人';*/
+
+      // 4.不影响作用域链
+      {
+          let school = 'XPU';
+          function fn() {
+              console.log(school);
+          }
+          fn();
+      }
+  </script>
+</body>
+</html>
