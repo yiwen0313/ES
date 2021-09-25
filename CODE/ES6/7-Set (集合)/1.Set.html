@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>集合</title>
+</head>
+<body>
+    <script>
+        // 声明一个Set
+        let s = new Set();
+        let s2 = new Set(['a', 'b', 'c', 'd', 'a']);
+
+        // 元素的个数
+        console.log(s2.size);
+
+        // 添加新的元素
+        s2.add('e');
+
+        // 删除元素
+        s2.delete('a');
+
+        // 检测
+        console.log(s2.has('y   '));
+
+        // 清空
+        // s2.clear();
+
+        // console.log(s, typeof s);
+        console.log(s2);
+
+        for (let v of s2) {
+            console.log(v);
+        }
+    </script>
+</body>
+</html>
