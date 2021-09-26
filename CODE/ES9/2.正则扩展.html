@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则扩展-命名捕获分组</title>
+</head>
+<body>
+    <script>
+        // 没有命名捕获分组之前的处理方法
+        /*let str = '<a href="http://www.mi.com">小米</a>'
+
+        // 提取 URl与 标签文本
+        const reg = /<a href="(.*)">(.*)<\/a>/;
+
+        // 执行
+        const result =  reg.exec(str);
+
+        console.log(result[1]);
+        console.log(result[2]);*/
+
+
+        let str = '<a href="http://www.mi.com">小米</a>'
+
+        const reg = /<a href="(?<url>.*)">(?<text>.*)<\/a>/;
+
+        const result = reg.exec(str);
+
+        console.log(result);
+        console.log(result.groups.text);
+        console.log(result.groups.url);
+    </script>
+</body>
+</html>
