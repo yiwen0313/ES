@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object.fromEntries</title>
+</head>
+<body>
+    <script>
+        // 二维数组
+        /*const result = Object.fromEntries([
+            ['name', 'xpu'],
+            ['xiaoqu', '临潼, 金花']
+        ]);*/
+
+        // Map
+        /*const m = new Map();
+        m.set('name', 'xpu');
+        const result = Object.fromEntries(m);*/
+
+        // Object.entries(); ES8
+        const arr = Object.entries({
+            name: 'xpu',
+        });
+
+        console.log(arr);
+    </script>
+</body>
+</html>
