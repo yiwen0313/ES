@@ -1,3 +1,4 @@
+// 分别暴露 
 export let school = 'xpu';
 
 export function teach() {
